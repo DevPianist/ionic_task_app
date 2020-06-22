@@ -18,7 +18,7 @@ export class Tab1Page {
   ) {
     this.tasks = tasksService.tasks;
   }
-  private async addTask() {
+  public async addTask() {
     const alert = await this.alertController.create({
       cssClass: "my-custom-class",
       header: "New task",
